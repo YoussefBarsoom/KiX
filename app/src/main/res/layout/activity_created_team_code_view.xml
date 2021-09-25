@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.NoActionBar"
+    tools:context=".created_team_code_view">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg1x"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="96dp"
+            android:fontFamily="@font/lato"
+            android:text="Send this code to your friends to let them join your team"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/team_code_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="228dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="36sp" />
+
+        <LinearLayout
+            android:layout_width="288dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="99dp">
+
+            <Button
+                android:id="@+id/button"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:background="@drawable/invitefriendsbutton1x"
+                android:onClick="sendbywhatsapp"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp"
+                tools:layout_editor_absoluteX="54dp"
+                tools:layout_editor_absoluteY="171dp" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:background="@drawable/findopponents1x"
+                android:onClick="move_to_main_view"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp"
+                tools:layout_editor_absoluteX="54dp"
+                tools:layout_editor_absoluteY="171dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

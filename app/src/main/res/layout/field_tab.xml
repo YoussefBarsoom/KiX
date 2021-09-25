@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/plz_work"
+        android:layout_width="395dp"
+        android:layout_height="215dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <TextView
+            android:id="@+id/id_index_gallery_item_text"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/id_index_gallery_item_image"
+            android:layout_toEndOf="@+id/id_index_gallery_item_image"
+            android:text="Field Name"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/id_index_gallery_item_image"
+            android:layout_width="117dp"
+            android:layout_height="113dp"
+
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="19dp"
+            android:scaleType="centerCrop" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="26dp"
+            android:layout_marginEnd="32dp"
+            android:onClick="call_num"
+            android:text="Call" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

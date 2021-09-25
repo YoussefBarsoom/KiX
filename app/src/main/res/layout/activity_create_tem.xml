@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme.NoActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.NoActionBar"
+    tools:context=".create_tem">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg1x"
+        android:theme="@style/AppTheme.NoActionBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="false"
+                android:padding="1dp"
+                android:paddingEnd="1dp"
+                android:paddingLeft="1dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="91dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:adjustViewBounds="false"
+                    app:srcCompat="@drawable/teamnamefield1x" />
+
+                <EditText
+                    android:id="@+id/team_name_field"
+
+                    android:layout_width="209dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:hint="Team Name"
+                    android:inputType="textCapWords"
+                    android:paddingBottom="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="false"
+                android:padding="1dp"
+                android:paddingEnd="1dp"
+                android:paddingLeft="1dp">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="91dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:adjustViewBounds="false"
+                    app:srcCompat="@drawable/usernamefield" />
+
+                <EditText
+                    android:id="@+id/user_name_field"
+
+                    android:layout_width="209dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:hint="User Name"
+                    android:inputType="textCapWords"
+                    android:paddingBottom="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="false"
+                android:gravity="bottom">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="91dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:adjustViewBounds="false"
+                    app:srcCompat="@drawable/phonenumberfield1x" />
+
+                <EditText
+                    android:id="@+id/team_captain_phone_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:paddingBottom="10dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/error_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/create_team_button2"
+            android:layout_centerHorizontal="true"
+            android:clickable="false"
+            android:enabled="false"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+        <Button
+            android:id="@+id/create_team_button2"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="288dp"
+            android:layout_height="77dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="2"
+            android:background="@drawable/create_team_1x"
+            android:fontFamily="sans-serif"
+            android:onClick="create_team_clicked"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#fffeff"
+            android:textSize="55sp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:onClick="click"
+            android:text="Button"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="32dp"
+            android:layout_height="62dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="17dp"
+            android:layout_toStartOf="@+id/create_team_button2"
+            android:background="@drawable/left_arrow1x"
+            android:onClick="back_to_first_view"
+            android:padding="40dp"
+            android:paddingLeft="10dp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

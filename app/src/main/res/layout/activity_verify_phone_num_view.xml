@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1x"
+    tools:context=".verify_phone_num_view"
+    tools:layout_editor_absoluteY="81dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="307dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <WebView
+            android:id="@+id/sms_webview"
+            android:layout_width="60dp"
+            android:layout_height="47dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="196dp"
+            android:fontFamily="@font/lato"
+            android:text="Verification code has been sent."
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="273dp"
+            android:layout_height="121dp"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="69dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/verifyblock1x" />
+
+                <EditText
+                    android:id="@+id/editText9"
+                    style="@android:style/Widget.DeviceDefault.EditText"
+                    android:layout_width="68dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:fontFamily="@font/lato"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/verifyblock1x" />
+
+                <EditText
+                    android:id="@+id/editText7"
+                    style="@android:style/Widget.DeviceDefault.EditText"
+                    android:layout_width="68dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:fontFamily="@font/lato"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/verifyblock1x" />
+
+                <EditText
+                    android:id="@+id/editText6"
+                    style="@android:style/Widget.DeviceDefault.EditText"
+                    android:layout_width="68dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:fontFamily="@font/lato"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/verifyblock1x" />
+
+                <EditText
+                    android:id="@+id/editText5"
+                    style="@android:style/Widget.DeviceDefault.EditText"
+                    android:layout_width="68dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:fontFamily="@font/lato"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/verify_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="288dp"
+            android:layout_height="77dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/verifybutton1x"
+            android:onClick="click_verify"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="54dp"
+            tools:layout_editor_absoluteY="171dp" />
+
+        <Button
+            android:id="@+id/back_button2"
+            android:layout_width="32dp"
+            android:layout_height="62dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/left_arrow1x"
+            android:onClick="back_to_first_view"
+            android:padding="40dp"
+            android:paddingLeft="10dp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:onClick="move_to_main_view" />
+
+        <TextView
+            android:id="@+id/error_dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="85dp"
+            android:fontFamily="@font/lato"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
